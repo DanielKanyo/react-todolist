@@ -1,28 +1,51 @@
-.App {
+html, body {
+  background: #303030;
+  color: #e8e8e8;
+  font-family: Inconsolata;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.notesWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.notesHeader {
   text-align: center;
+  padding: 25px;
+  background: #303030;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+  -webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.notesBody div {
+  background: #23e088;
+  color: #303030;
+  padding: 15px;
+  margin: 15px 15px 5px 15px;
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.notesFooter {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.75);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
