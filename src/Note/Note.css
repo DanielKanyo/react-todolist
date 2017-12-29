@@ -1,0 +1,28 @@
+.note {
+  float: left;
+  width: calc(100% - 30px);
+}
+
+.noteContent {
+  float: left;
+  margin: 10px 15px;
+}
+
+.deleteContainer {
+  float: right;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.deleteContainer button {
+  border: none;
+  padding: 11px 20px;
+  border-radius: 3px;
+  background: #13c673;
+  color: #303030;
+  outline: none;
+}
+
+.deleteContainer button:hover {
+  cursor: pointer;
+}
